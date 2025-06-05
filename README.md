@@ -4,4 +4,6 @@
 
 *Chiarimenti* : **https://docs.google.com/document/d/1S4eOOR2sng-Fqo53-K_0n4Vo0FTO_6DoG_ygOBNZkIw/edit?tab=t.0#heading=h.3ydcr2mivisk**  
 
-*Stateflow* : **https://it.mathworks.com/help/stateflow/examples.html?category=getting-started&exampleproduct=all&newonly=&s_tid=CRUX_topnav&lang=en**
+*Stateflow* : **https://it.mathworks.com/help/stateflow/examples.html?category=getting-started&exampleproduct=all&newonly=&s_tid=CRUX_topnav&lang=en**  
+
+*MATLAB for STM32 boards*: **https://it.mathworks.com/help/ecoder/examples.html?category=stm32-spkg&s_tid=CRUX_topnav**
