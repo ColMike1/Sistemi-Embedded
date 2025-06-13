@@ -1,0 +1,7 @@
+Realizzare un firmware con architettura a loop infinito in cui la pressione del pulsante utente provoca la variazione della frequenza di lampeggio del led utente.
+
+Inizialmente il led utente effettua il blink con una frequenza di 1Hz.
+
+La pressione del pulsante provoca un cambio della frequenza di blink del led tra le seguenti: 1, 2 e 4 Hz. 
+
+Se si preme nuovamente il pulsante quando il blink è a 4 Hz la frequenza ritorna ad 1Hz.

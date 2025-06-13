@@ -1,0 +1,30 @@
+SISTEMI EMBEDDED [0622700026*83862]
+Blink a frequenza variabile con interruzioni e dispositivi esterni
+
+Blink a frequenza variabile con interruzioni e dispositivi esterni
+Aggregazione dei criteri
+Realizzare un firmware con architettura ad eventi in cui la pressione di un pulsante esterno provoca la variazione della frequenza di lampeggio del led utente.
+
+Utilizzare un pulsante esterno collegato al pin PC10 ed un led esterno collegato al pin PC13
+Il led deve essere pilotato gestendo l'update event di un timer di base.
+Il timer è inizialmente non attivo.
+La pressione del pulsante utente provoca l'attivazione o la sospensione del timer.
+Entrambi i pulsandi devono essere gestito tramite interruzioni
+Comportamento
+
+Inizialmente il led utente effettua il blink con una frequenza di 1Hz.
+La pressione del pulsante provoca un cambio della frequenza di blink del led tra le seguenti: 1, 2 e 4 Hz. 
+Se si preme nuovamente il pulsante quando il blink è a 4 Hz la frequenza ritorna ad 1Hz.
+Suggerimento:
+
+E' possibile variare la frequenza del timer agendo sul prescaler o sull'compare register (ARR).
+
+Per poter cambiare il valore di questi registri è possibile accedere ad essi direttamente tramite l'handler del timer, ad esempio se stiamo usando il timer 6.
+
+htim6.Instance->ARR (Registro di comparazione, chiamato anche period)
+htim6.Instance->PSC (Registro del prescaler del timer)
+In alternativa è possibile usare delle macro fornite dell'HAL:
+
+__HAL_TIM_SET_AUTORELOAD
+__HAL_TIM_GET_AUTORELOAD
+__HAL_TIM_SET_PRESCALER
